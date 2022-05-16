@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".loginregist.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/midtopregis" />
+
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cardlogin"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:fontFamily="@font/kadwabold"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/white"
+            app:boxBackgroundColor="@color/secColor"
+            app:hintTextColor="@color/white"
+            app:startIconCheckable="true"
+            app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/white"
+            app:boxBackgroundColor="@color/secColor"
+            app:hintTextColor="@color/white"
+            app:startIconCheckable="true"
+            app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:hint="Username" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/white"
+            app:boxBackgroundColor="@color/secColor"
+            app:hintTextColor="@color/white"
+            app:startIconCheckable="true"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/white"
+            app:boxBackgroundColor="@color/secColor"
+            app:hintTextColor="@color/white"
+            app:startIconCheckable="true"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+            <EditText
+                android:id="@+id/edt_confirm_pass"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="246dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonround"
+            android:backgroundTint="@color/thirdColor"
+            android:fontFamily="@font/kadwabold"
+            android:text="Submit"
+            android:elevation="20dp"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/atomicagereg"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kadwabold"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/rbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bottommidregis" />
+
+
+</RelativeLayout>

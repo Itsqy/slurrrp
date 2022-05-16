@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/thirdbg">
+
+    <ImageView
+        android:id="@+id/img_drinks"
+        android:layout_width="137dp"
+        android:layout_height="93dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/avocado" />
+
+
+    <ImageView
+        android:id="@+id/bg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_drink"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bgtext" />
+
+
+    <TextView
+        android:id="@+id/tv_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_drink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/kadwabold"
+        android:text="Avocado Greenty"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
